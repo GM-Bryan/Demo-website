@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="HTML, CSS, JavaSript">
+        <meta name="description" content="bla bla bla.....">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, inital-scale = 1.0">
+        <base href="HTML Links.htm" target="_blank">
+        <style>
+                body {
+                        background-color: rgb(78, 61, 39);
+                        color: white;
+                }
+
+                .animated-button {
+                        width: 150px;
+                        height: 50px;
+                        background-color: #2ecc71;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                }
+
+                .animated-button::before {
+                        content: "";
+                        background-color: #70e9a0;
+                        width: 0;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: width 2s ease-in-out;
+                }
+
+                .animated-button:hover::before {
+                        width: 100%;
+                }
+
+                a:link {
+                        color: green;
+                }
+
+                a:active {
+                        color: red;
+                }
+
+                a:hover {
+                        color: yellow;
+                }
+
+                a:visited {
+                        color: rgba(52, 90, 214, 0.486);
+                }
+        </style>
+        <title>HTML Links</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+        <h1>HTML Links</h1>
+        <p>
+                <hr>Links are found in nearly all web pages. Links allow users to click their way from page to page
+                <hr>
+        </p>
+        <h2>HTML Links - Hyperlinks</h2>
+        <img src="/images/programming.gif" alt="Computer man" style="float:inline-start;width: 30px;height: 30px;"><br>
+        <p>HTML links are hyperlinks.<br>You can click on a link and jump to another document.<br>When you move the
+                mouse over a link, the mouse arrow will turn into a little hand.<br></p>
+        <img src="/images/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+        <p><mark><strong>Note:</strong>A link does not have to be text. A link can be an image or any other HTML
+                        element!</mark></p>
+        <h2>HTML Links - Syntax</h2>
+        <img src="/images/workplace.jpg" alt="workplace" usemap="#workmap">
+        <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        </map>
+        <p>The HTML <a> tag defines a hyperlink. It has the following syntax:<br></p>
+        <p><a href="url">link text</a><br></p>
+        <p>The most important attribute of the &lt; a &gt; element is the &lt; href &gt; attribute, which indicates the link's
+                destination.</p><br>
+        <p>The link text is the part that will be visible to the reader.</p><br>
+        <p>Clicking on the link text, will send the reader to the specified URL address.</p><br>
+        <h3>Example</h3>
+        <button class="animated-button" onclick="alert('Keep going, almost there');">Click Me</button>
+        <p><a href="https://www.w3schools.com/"><img src="/images/smiley.gif" alt="w3schools"
+                                style="float:left;width: 60px;height: 60px;"></a> This example shows how to create a
+                link to W3Schools.com:</p><br>
+        <p>By default, links will appear as follows in all browsers:</p>
+        <a href="paths.htm" title="External Paths"><button onclick="document.location='paths.htm'">External Paths</button></button></a><br>
+        <a href="#" target="_top">Jumps to top</a>
+</body>
+
+</html>
